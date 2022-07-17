@@ -7,29 +7,23 @@ public class Main {
         } else if (clientOS == 1) {
             System.out.println("Установите версию для Android по ссылке");
         }
-    }
-}
 
-public class Main {
-    public static void main(String[] args) {
+
         //Вторая задача:
-        int clientOS = 1;
+        int client0S = 1;
         int clientDeviceYear = 2014;
 
-        if (clientOS == 0 && clientDeviceYear < 2015) {
+        if (client0S == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+        } else if (client0S == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear < 2015) {
+        } else if (client0S == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+        } else if (client0S == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
-    }
-}
 
-public class Main {
-    public static void main(String[] args) {
+
         //Третья задача:
         int year = 2010;
         if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
@@ -37,37 +31,46 @@ public class Main {
         } else {
             System.out.println("Год не является високосным");
         }
-    }
-}
 
-public class Main {
-    public static void main(String[] args) {
+
         //Четвертая задача:
-        int deliveryDistance = 59;
+        int deliveryDistance = 9;
         if (deliveryDistance < 20) {
             System.out.println("Для доставки потребуется 1 день");
         } else if ((deliveryDistance >= 20) && (deliveryDistance < 60)) {
             System.out.println("Для доставки потребуется 2 дня");
         } else if ((deliveryDistance >= 60) && (deliveryDistance <= 100)) {
             System.out.println("Для доставки потребуется 3 дня");
-        }
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        //Пятая задача:
-        int monthNumber = 11;
-        if ((monthNumber == 12) || (monthNumber >= 1) && (monthNumber <= 2)) {
-            System.out.println("Сейчас зима");
-        } else if ((monthNumber >= 3) && (monthNumber <= 5)) {
-            System.out.println("Сейчас весна");
-        } else if ((monthNumber >= 6) && (monthNumber <= 8)) {
-            System.out.println("Сейчас лето");
-        } else if ((monthNumber >= 9) && (monthNumber <= 11)) {
-            System.out.println("Сейчас осень");
         } else {
-            System.out.println("Такого месяца не существует");
+            System.out.println("Доставка не осуществляется");
+        }
+
+
+        //Пятая задача:
+        int monthNumber = 7;
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("Сейчас зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Сейчас весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Сейчас лето");
+                break;
+            case  9:
+            case 10:
+            case 11:
+                System.out.println("Сейчас осень");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
         }
     }
 }
