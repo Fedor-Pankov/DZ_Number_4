@@ -70,7 +70,7 @@ public class Main {
                 System.out.println("Сейчас осень");
                 break;
             default:
-                System.out.println("Такого месяца не существует");
+                System.out.println("Такого месяца нет");
         }
     }
 }
